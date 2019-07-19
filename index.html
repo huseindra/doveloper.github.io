@@ -5,14 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tailwind Starter Template - Landing Page Template: Tailwind Toolbox</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
+  <title>Buat Toko Online - Layanan jasa pembuatan toko online dengan SEO</title>
+  <meta name="description" content="Layanan online jasa pembuatan toko online dengan SEO">
+  <meta name="keywords" content="Jasa toko online, Website SEO, Toko Online Murah, Toko Online Merakyat, Buat Toko Online Murah, Situs Murah, Buat Toko Online tampil halaman pertama google">
+  <meta name="author" content="Husein Indra Kusuma">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144182247-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
+	gtag('config', 'UA-144182247-1');
+	</script>
+	
+  <!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-W7Q9GVK');</script>
+	<!-- End Google Tag Manager -->
   <!-- Font Awesome if you need it
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
   -->
+  <link rel="icon" href="buat-toko-online.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
   <!--Replace with your tailwind.css once created-->
 
@@ -23,15 +40,15 @@
 		.gradient {
 			background: linear-gradient(90deg, #6bb1de 0%, #045cca 100%);
 		}
-		.module {
-			scroll-behavior: [ auto | smooth ];
-		}
 	</style>
 
 </head>
 
 <body class="leading-normal tracking-normal text-white gradient module" style="font-family: 'Source Sans Pro', sans-serif;">
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7Q9GVK"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 <!--Nav-->
 <nav id="header" class="fixed w-full z-30 top-0 text-white" id="utama" >
 
@@ -474,9 +491,7 @@
 
 
 
-  <!-- jQuery if you need it
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
 
@@ -494,10 +509,6 @@
 
     if(scrollpos > 10){
       header.classList.add("bg-white");
-	  navaction.classList.remove("bg-white");
-	  navaction.classList.add("gradient");
-	  navaction.classList.remove("text-gray-800");
-	  navaction.classList.add("text-white");
 	  //Use to switch toggleColour colours
   	  for (var i = 0; i < toToggle.length; i++) {
 	     toToggle[i].classList.add("text-gray-800");
@@ -509,10 +520,6 @@
     }
     else {
 	  header.classList.remove("bg-white");
-	  navaction.classList.remove("gradient");
-	  navaction.classList.add("bg-white");
-	  navaction.classList.remove("text-white");
-	  navaction.classList.add("text-gray-800");
 	  //Use to switch toggleColour colours
   	  for (var i = 0; i < toToggle.length; i++) {
 	     toToggle[i].classList.add("text-white");
