@@ -1,0 +1,16 @@
+version: "3"
+
+networks:
+  local:
+    external:
+      name: local
+
+services:
+  doveloper:
+    container_name: doveloper
+    image: httpd:alpine
+    restart: always
+    volumes:
+      - ./:/usr/local/apache2/htdocs
+    networks:
+      - local
